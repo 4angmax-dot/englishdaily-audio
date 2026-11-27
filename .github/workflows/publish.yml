@@ -1,0 +1,63 @@
+name: Publish voice packs
+
+# Пакеты озвучки кладутся в ветку `incoming` (zip + json с описанием из tools/build_pack.py).
+# Этот workflow создаёт релиз для каждого пакета, прикрепляет zip, обновляет manifest.json в main
+# и удаляет ветку incoming. Приложение читает manifest.json и показывает пакеты в настройках.
+on:
+  push:
+    branches: [incoming]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: incoming
+          path: incoming
+
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          path: main
+
+      - name: Create releases and update manifest
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -e
+          cd incoming
+          for meta in packs/*.json; do
+            [ -f "$meta" ] || continue
+            id=$(jq -r .id "$meta"); ver=$(jq -r .version "$meta")
+            zip="packs/${id}-v${ver}.zip"
+            tag="${id}-v${ver}"
+            gh release view "$tag" -R "$REPO" >/dev/null 2>&1 || \
+              gh release create "$tag" -R "$REPO" --title "$id v$ver" --notes "Пакет озвучки $id, версия $ver"
+            gh release upload "$tag" "$zip#${id}.zip" -R "$REPO" --clobber
+            url="https://github.com/$REPO/releases/download/$tag/${id}.zip"
+            jq --arg url "$url" '.url = $url' "$meta" > /tmp/entry.json
+            # Заменить или добавить запись пакета в manifest.json
+            jq --slurpfile e /tmp/entry.json '.packs = ([.packs[] | select(.id != $e[0].id)] + $e)' \
+              ../main/manifest.json > /tmp/manifest.json
+            cp /tmp/manifest.json ../main/manifest.json
+          done
+          # Удаление пакетов из оглавления: файл packs/remove.txt со списком id
+          if [ -f packs/remove.txt ]; then
+            while read -r id; do
+              [ -n "$id" ] || continue
+              jq --arg id "$id" '.packs = [.packs[] | select(.id != $id)]' ../main/manifest.json > /tmp/manifest.json
+              cp /tmp/manifest.json ../main/manifest.json
+            done < packs/remove.txt
+          fi
+          cd ../main
+          git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
+          git add manifest.json
+          git diff --cached --quiet || git commit -m "manifest: обновлены пакеты озвучки"
+          git push origin main
+          git push origin --delete incoming || true

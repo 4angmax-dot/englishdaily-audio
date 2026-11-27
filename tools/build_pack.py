@@ -114,6 +114,7 @@ def main():
     sha = hashlib.sha256(open(zpath, "rb").read()).hexdigest()
     entry = {"id": pid, "kind": a.kind, "accent": a.accent, "voice": voice, "version": a.version, "clips": n,
              "size": os.path.getsize(zpath), "sha256": sha, "url": "", "preview": ""}
+    open(f"{a.out}/{pid}-v{a.version}.json", "w").write(json.dumps(entry, ensure_ascii=False))
     print(json.dumps(entry, ensure_ascii=False))
 
 if __name__ == "__main__":
