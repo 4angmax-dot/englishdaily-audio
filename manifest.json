@@ -46,6 +46,21 @@
       "preview": "https://raw.githubusercontent.com/4angmax-dot/englishdaily-audio/main/previews/matilda.webm",
       "title": "Слова и выражения — Matilda (женский, американский)",
       "title_uk": "Слова й вирази — Matilda (жіночий, американський)"
+    },
+    {
+      "id": "words_uk_george",
+      "kind": "words",
+      "accent": "uk",
+      "voice": "george",
+      "version": 1,
+      "clips": 8695,
+      "total": 8695,
+      "size": 31686445,
+      "sha256": "f994ee2fbe540bdfc5da9c2e629db0b2f72b8743a505527c0ba83cdf467350c6",
+      "url": "https://github.com/4angmax-dot/englishdaily-audio/releases/download/words_uk_george-v1/words_uk_george-v1.zip",
+      "preview": "https://raw.githubusercontent.com/4angmax-dot/englishdaily-audio/main/previews/george.webm",
+      "title": "Слова и выражения — George (мужской, британский)",
+      "title_uk": "Слова й вирази — George (чоловічий, британський)"
     }
   ]
 }
