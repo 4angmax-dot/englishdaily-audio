@@ -82,9 +82,9 @@
    "pack": "words_uk_george",
    "voice": "george",
    "model": "eleven_v4_turbo",
-   "clips": 4000,
-   "chars": 41191,
-   "credits": 20595,
+   "clips": 4200,
+   "chars": 43850,
+   "credits": 21925,
    "tier": "creator",
    "trial": false
   }
