@@ -76,6 +76,17 @@
    "credits": 41270,
    "tier": "creator",
    "trial": false
+  },
+  {
+   "date": "2026-11-27",
+   "pack": "words_uk_george",
+   "voice": "george",
+   "model": "eleven_v4_turbo",
+   "clips": 200,
+   "chars": 1932,
+   "credits": 966,
+   "tier": "creator",
+   "trial": false
   }
  ]
 }
