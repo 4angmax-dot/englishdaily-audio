@@ -1,2 +1,5 @@
 cache/
 dist/
+trial/
+*.part*
+__pycache__/
