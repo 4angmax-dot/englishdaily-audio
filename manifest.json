@@ -1,19 +1,5 @@
 {
   "format": 1,
   "note": "Пакеты озвучки EnglishDaily. Пока пусто: публичные пакеты появятся после генерации на платном плане ElevenLabs.",
-  "packs": [
-    {
-      "id": "test_ping",
-      "kind": "words",
-      "accent": "xx",
-      "voice": "test",
-      "version": 1,
-      "clips": 1,
-      "size": 2404,
-      "sha256": "3a9c6b65eff040e589a1b195e4f5efacc9d37f623e80fe8511f1855ce1cc27d6",
-      "url": "https://github.com/4angmax-dot/englishdaily-audio/releases/download/test_ping-v1/test_ping-v1.zip",
-      "preview": "",
-      "title": "Тест публикации"
-    }
-  ]
+  "packs": []
 }
