@@ -1,0 +1,37 @@
+{
+ "runs": [
+  {
+   "date": "2026-11-27",
+   "pack": "пилот: сравнение голосов",
+   "voice": "10 голосов",
+   "model": "v2, v4, flash, v4 turbo",
+   "clips": 106,
+   "chars": 2955,
+   "credits": 2078,
+   "tier": "free",
+   "trial": true
+  },
+  {
+   "date": "2026-11-27",
+   "pack": "words_us_matilda (пробный, 1580 первых)",
+   "voice": "matilda",
+   "model": "eleven_v4_turbo",
+   "clips": 1580,
+   "chars": 13979,
+   "credits": 6935,
+   "tier": "free",
+   "trial": true
+  },
+  {
+   "date": "2026-11-27",
+   "pack": "words_us_matilda",
+   "voice": "matilda",
+   "model": "eleven_v4_turbo",
+   "clips": 2,
+   "chars": 30,
+   "credits": 15,
+   "tier": "creator",
+   "trial": false
+  }
+ ]
+}
