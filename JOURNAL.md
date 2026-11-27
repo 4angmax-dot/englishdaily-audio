@@ -6,7 +6,7 @@
 
 | Пакет | Готово | Осталось символов | Нужно кредитов |
 |---|---|---|---|
-| words_us_matilda | 3203/8695 | 52 060 | 26 030 |
+| words_us_matilda | 3402/8695 | 50 119 | 25 059 |
 | words_us_brian | 0/8695 | 82 541 | 41 270 |
 | words_uk_alice | 0/8695 | 82 541 | 41 270 |
 | words_uk_george | 0/8695 | 82 541 | 41 270 |
@@ -17,7 +17,7 @@
 
 | Дата | Пакет | Голос | Модель | Новых записей | Символов | Кредитов | Тариф |
 |---|---|---|---|---|---|---|---|
-| 2026-11-27 | words_us_matilda | matilda | eleven_v4_turbo | 3200 | 30446 | 15223 | creator |
+| 2026-11-27 | words_us_matilda | matilda | eleven_v4_turbo | 3400 | 32392 | 16196 | creator |
 | 2026-11-27 | words_us_matilda | matilda | eleven_v4_turbo | 2 | 30 | 15 | creator |
 | 2026-11-27 | words_us_matilda (пробный, 1580 первых) | matilda | eleven_v4_turbo | 1580 | 13979 | 6935 | free (пробно, не в git) |
 | 2026-11-27 | пилот: сравнение голосов | 10 голосов | v2, v4, flash, v4 turbo | 106 | 2955 | 2078 | free (пробно, не в git) |
