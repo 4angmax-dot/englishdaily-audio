@@ -49,9 +49,9 @@
    "pack": "words_us_matilda",
    "voice": "matilda",
    "model": "eleven_v4_turbo",
-   "clips": 1200,
-   "chars": 14750,
-   "credits": 7375,
+   "clips": 1400,
+   "chars": 16302,
+   "credits": 8151,
    "tier": "creator",
    "trial": false
   }
