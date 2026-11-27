@@ -71,9 +71,9 @@
    "pack": "words_uk_alice",
    "voice": "alice",
    "model": "eleven_v4_turbo",
-   "clips": 1600,
-   "chars": 14427,
-   "credits": 7213,
+   "clips": 1800,
+   "chars": 17389,
+   "credits": 8694,
    "tier": "creator",
    "trial": false
   }
