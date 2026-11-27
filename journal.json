@@ -32,6 +32,17 @@
    "credits": 15,
    "tier": "creator",
    "trial": false
+  },
+  {
+   "date": "2026-11-27",
+   "pack": "words_us_matilda",
+   "voice": "matilda",
+   "model": "eleven_v4_turbo",
+   "clips": 200,
+   "chars": 1912,
+   "credits": 956,
+   "tier": "creator",
+   "trial": false
   }
  ]
 }
