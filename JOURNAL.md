@@ -8,7 +8,7 @@
 |---|---|---|---|
 | words_us_matilda | 8695/8695 | 0 | 0 |
 | words_us_brian | 8695/8695 | 0 | 0 |
-| words_uk_alice | 7203/8695 | 11 650 | 5 825 |
+| words_uk_alice | 7403/8695 | 10 101 | 5 050 |
 | words_uk_george | 0/8695 | 82 541 | 41 270 |
 | examples_us | 0/9618 | 367 854 | 183 927 |
 | examples_uk | 0/9618 | 367 854 | 183 927 |
@@ -17,7 +17,7 @@
 
 | Дата | Пакет | Голос | Модель | Новых записей | Символов | Кредитов | Тариф |
 |---|---|---|---|---|---|---|---|
-| 2026-11-27 | words_uk_alice | alice | eleven_v4_turbo | 7200 | 70866 | 35433 | creator |
+| 2026-11-27 | words_uk_alice | alice | eleven_v4_turbo | 7400 | 72416 | 36208 | creator |
 | 2026-11-27 | words_us_brian | brian | eleven_v4_turbo | 8695 | 82541 | 41270 | creator |
 | 2026-11-27 | words_us_matilda | matilda | eleven_v4_turbo | 5076 | 46847 | 23423 | creator |
 | 2026-11-27 | words_us_matilda | matilda | eleven_v4_turbo | 3617 | 35664 | 17832 | creator |
