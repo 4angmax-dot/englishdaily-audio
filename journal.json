@@ -60,9 +60,9 @@
    "pack": "words_us_brian",
    "voice": "brian",
    "model": "eleven_v4_turbo",
-   "clips": 5200,
-   "chars": 53297,
-   "credits": 26648,
+   "clips": 5400,
+   "chars": 54882,
+   "credits": 27441,
    "tier": "creator",
    "trial": false
   }
