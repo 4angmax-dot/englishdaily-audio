@@ -39,8 +39,8 @@ jobs:
             tag="${id}-v${ver}"
             gh release view "$tag" -R "$REPO" >/dev/null 2>&1 || \
               gh release create "$tag" -R "$REPO" --title "$id v$ver" --notes "Пакет озвучки $id, версия $ver"
-            gh release upload "$tag" "$zip#${id}.zip" -R "$REPO" --clobber
-            url="https://github.com/$REPO/releases/download/$tag/${id}.zip"
+            gh release upload "$tag" "$zip" -R "$REPO" --clobber
+            url="https://github.com/$REPO/releases/download/$tag/$(basename "$zip")"
             jq --arg url "$url" '.url = $url' "$meta" > /tmp/entry.json
             # Заменить или добавить запись пакета в manifest.json
             jq --slurpfile e /tmp/entry.json '.packs = ([.packs[] | select(.id != $e[0].id)] + $e)' \
