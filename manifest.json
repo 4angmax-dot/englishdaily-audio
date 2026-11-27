@@ -1,5 +1,51 @@
 {
   "format": 1,
   "note": "Пакеты озвучки EnglishDaily. Пока пусто: публичные пакеты появятся после генерации на платном плане ElevenLabs.",
-  "packs": []
+  "packs": [
+    {
+      "id": "words_uk_alice",
+      "kind": "words",
+      "accent": "uk",
+      "voice": "alice",
+      "version": 1,
+      "clips": 8695,
+      "total": 8695,
+      "size": 32349160,
+      "sha256": "351dea856f6e969e448565c34202be78556020b2be877a4f96196432ea7bc18f",
+      "url": "https://github.com/4angmax-dot/englishdaily-audio/releases/download/words_uk_alice-v1/words_uk_alice-v1.zip",
+      "preview": "https://raw.githubusercontent.com/4angmax-dot/englishdaily-audio/main/previews/alice.webm",
+      "title": "Слова и выражения — Alice (женский, британский)",
+      "title_uk": "Слова й вирази — Alice (жіночий, британський)"
+    },
+    {
+      "id": "words_us_brian",
+      "kind": "words",
+      "accent": "us",
+      "voice": "brian",
+      "version": 1,
+      "clips": 8695,
+      "total": 8695,
+      "size": 31592801,
+      "sha256": "302fbf5909ad33616c72670800e31898c1dde40eb729f235acc1289e7ff465e1",
+      "url": "https://github.com/4angmax-dot/englishdaily-audio/releases/download/words_us_brian-v1/words_us_brian-v1.zip",
+      "preview": "https://raw.githubusercontent.com/4angmax-dot/englishdaily-audio/main/previews/brian.webm",
+      "title": "Слова и выражения — Brian (мужской, американский)",
+      "title_uk": "Слова й вирази — Brian (чоловічий, американський)"
+    },
+    {
+      "id": "words_us_matilda",
+      "kind": "words",
+      "accent": "us",
+      "voice": "matilda",
+      "version": 1,
+      "clips": 8695,
+      "total": 8695,
+      "size": 32789130,
+      "sha256": "ecb479b09030f6ec61bfbb2bbfd68a6ccd1da3819abd03f87f2b4659686a2445",
+      "url": "https://github.com/4angmax-dot/englishdaily-audio/releases/download/words_us_matilda-v1/words_us_matilda-v1.zip",
+      "preview": "https://raw.githubusercontent.com/4angmax-dot/englishdaily-audio/main/previews/matilda.webm",
+      "title": "Слова и выражения — Matilda (женский, американский)",
+      "title_uk": "Слова й вирази — Matilda (жіночий, американський)"
+    }
+  ]
 }
