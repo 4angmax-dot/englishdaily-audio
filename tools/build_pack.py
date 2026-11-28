@@ -27,7 +27,7 @@ import argparse, datetime, hashlib, json, os, re, subprocess, sys, zipfile, conc
 VOICES = {"matilda": "XrExE9yKIg1WjnnlVkGX", "brian": "nPczCjzI2devNBz1zQrb",
           "alice": "Xb7hH8MSUJpSbSDYk0k2", "george": "JBFqnCBsd6RMkjVDRZzb"}
 PAIRS = {"us": ("matilda", "brian"), "uk": ("alice", "george")}   # (A — женский, B — мужской)
-RATE = {"eleven_v4_turbo": 0.5, "eleven_flash_v2_5": 0.5, "eleven_turbo_v2_5": 0.5}  # кредитов за символ, остальное — 1
+RATE = {"eleven_v4_turbo": 0.22, "eleven_flash_v2_5": 0.5, "eleven_turbo_v2_5": 0.5}  # кредитов за символ (v4 turbo — по факту списаний), остальное — 1
 LEVEL = {"A1": 1, "A2": 2, "B1": 3, "B2": 4, "C1": 5}
 ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 PLANNED = [("words", "us", "matilda"), ("words", "us", "brian"), ("words", "uk", "alice"), ("words", "uk", "george"),
@@ -149,6 +149,7 @@ def git_save(msg):
 def cmd_voice(a):
     sub = api("/v1/user/subscription")
     tier = sub.get("tier", "?")
+    used_before = sub.get("character_count")
     trial = tier == "free" or a.trial
     if trial: print("Бесплатный план: записи — только в trial/ (не в git, не для публикации).")
     voice = a.voice or PAIRS[a.accent][0]
@@ -179,6 +180,10 @@ def cmd_voice(a):
     try:
         with cf.ThreadPoolExecutor(a.threads) as ex: list(ex.map(work, todo))
     finally:
+        # Фактический расход — по счётчику аккаунта (оценка по символам бывает неточной).
+        after = api("/v1/user/subscription").get("character_count")
+        if isinstance(used_before, int) and isinstance(after, int) and after >= used_before:
+            run["credits"] = after - used_before
         save_journal(j, a.items)
         if not trial: git_save(f"Озвучка {pack}: {run['clips']} записей, {run['credits']} кредитов")
     print(f"Готово: {run['clips']} записей, {run['credits']} кредитов. Журнал — JOURNAL.md")

@@ -29,7 +29,7 @@
    "model": "eleven_v4_turbo",
    "clips": 2,
    "chars": 30,
-   "credits": 15,
+   "credits": 7,
    "tier": "creator",
    "trial": false
   },
@@ -40,7 +40,7 @@
    "model": "eleven_v4_turbo",
    "clips": 3617,
    "chars": 35664,
-   "credits": 17832,
+   "credits": 7846,
    "tier": "creator",
    "trial": false
   },
@@ -51,7 +51,7 @@
    "model": "eleven_v4_turbo",
    "clips": 5076,
    "chars": 46847,
-   "credits": 23423,
+   "credits": 10306,
    "tier": "creator",
    "trial": false
   },
@@ -62,7 +62,7 @@
    "model": "eleven_v4_turbo",
    "clips": 8695,
    "chars": 82541,
-   "credits": 41270,
+   "credits": 18159,
    "tier": "creator",
    "trial": false
   },
@@ -73,7 +73,7 @@
    "model": "eleven_v4_turbo",
    "clips": 8695,
    "chars": 82541,
-   "credits": 41270,
+   "credits": 18159,
    "tier": "creator",
    "trial": false
   },
@@ -84,7 +84,7 @@
    "model": "eleven_v4_turbo",
    "clips": 8695,
    "chars": 82541,
-   "credits": 41270,
+   "credits": 18159,
    "tier": "creator",
    "trial": false
   },
@@ -95,7 +95,7 @@
    "model": "eleven_v4_turbo",
    "clips": 6608,
    "chars": 226960,
-   "credits": 113480,
+   "credits": 49931,
    "tier": "creator",
    "trial": false
   }
