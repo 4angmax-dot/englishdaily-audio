@@ -61,6 +61,21 @@
       "preview": "https://raw.githubusercontent.com/4angmax-dot/englishdaily-audio/main/previews/george.webm",
       "title": "Слова и выражения — George (мужской, британский)",
       "title_uk": "Слова й вирази — George (чоловічий, британський)"
+    },
+    {
+      "id": "examples_us",
+      "kind": "examples",
+      "accent": "us",
+      "voice": "matilda",
+      "version": 1,
+      "clips": 6608,
+      "total": 9618,
+      "size": 50291314,
+      "sha256": "9aa37bd464521674ce79040d0c9ea8dd6b998bf8649624acf2d0be76da9d4a90",
+      "url": "https://github.com/4angmax-dot/englishdaily-audio/releases/download/examples_us-v1/examples_us-v1.zip",
+      "preview": "https://raw.githubusercontent.com/4angmax-dot/englishdaily-audio/main/previews/matilda.webm",
+      "title": "Примеры и диалоги (американский) — 69%, дополняется",
+      "title_uk": "Приклади й діалоги (американський) — 69%, доповнюється"
     }
   ]
 }
