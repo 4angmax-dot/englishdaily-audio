@@ -10,14 +10,14 @@
 | words_us_brian | 8695/8695 | 0 | 0 |
 | words_uk_alice | 8695/8695 | 0 | 0 |
 | words_uk_george | 8695/8695 | 0 | 0 |
-| examples_us | 1003/9618 | 338 389 | 169 194 |
+| examples_us | 1203/9618 | 331 659 | 165 829 |
 | examples_uk | 0/9618 | 367 854 | 183 927 |
 
 ## Запуски
 
 | Дата | Пакет | Голос | Модель | Новых записей | Символов | Кредитов | Тариф |
 |---|---|---|---|---|---|---|---|
-| 2026-11-28 | examples_us | matilda | eleven_v4_turbo | 1000 | 29359 | 14679 | creator |
+| 2026-11-28 | examples_us | matilda | eleven_v4_turbo | 1200 | 36129 | 18064 | creator |
 | 2026-11-27 | words_uk_george | george | eleven_v4_turbo | 8695 | 82541 | 41270 | creator |
 | 2026-11-27 | words_uk_alice | alice | eleven_v4_turbo | 8695 | 82541 | 41270 | creator |
 | 2026-11-27 | words_us_brian | brian | eleven_v4_turbo | 8695 | 82541 | 41270 | creator |
