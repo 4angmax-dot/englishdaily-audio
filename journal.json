@@ -93,9 +93,9 @@
    "pack": "examples_us",
    "voice": "matilda",
    "model": "eleven_v4_turbo",
-   "clips": 800,
-   "chars": 22999,
-   "credits": 11499,
+   "clips": 1000,
+   "chars": 29359,
+   "credits": 14679,
    "tier": "creator",
    "trial": false
   }
